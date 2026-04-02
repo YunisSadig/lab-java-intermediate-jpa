@@ -1,10 +1,12 @@
 package com.example.demo.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
 
 import java.time.LocalDate;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "id")
 public class BillableTask extends Tasks {
     public double getHourlyRate() {
         return hourlyRate;
