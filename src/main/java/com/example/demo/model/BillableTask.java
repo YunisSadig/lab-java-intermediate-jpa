@@ -16,6 +16,7 @@ public class BillableTask extends Tasks {
 
     private double hourlyRate;
 
+    public BillableTask(){}
     public BillableTask(String title, LocalDate due, boolean status, double hourlyRate) {
         super(title, due, status);
         this.hourlyRate = hourlyRate;

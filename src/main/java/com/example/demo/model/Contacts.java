@@ -14,7 +14,7 @@ public class Contacts {
             @AttributeOverride(name = "salutation",column = @Column(name = "contact_salutation"))
     })
     @Embedded
-    private String name;
+    private Name name;
 
     private String title;
     private String company;

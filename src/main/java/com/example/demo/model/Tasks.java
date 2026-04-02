@@ -13,6 +13,7 @@ public abstract class Tasks {
     private LocalDate due;
     private boolean status;
 
+    public Tasks(){}
     public Tasks(String title, LocalDate due, boolean status) {
         this.title = title;
         this.due = due;
